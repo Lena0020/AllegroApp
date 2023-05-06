@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>User</title>
+</head>
+<body>
+<form action="#" th:action="@{/allegro/userCreated}" th:object="${userForm}" method="post">
+    <input type="text" th:field="*{name}"placeholder="Name and Surname">
+    <input type="text" th:field="*{username}"placeholder="Username">
+    <input type="text" th:field="*{password}"placeholder="Password">
+    <button type="submit">Create user</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<h1>Show products by category</h1>
+<form action="#" th:action="@{/allegro/productList}" th:object="${formCategory}" method="post">
+  <select th:field="*{category}">
+    <option value="house">house</option>
+    <option value="garden">garden</option>
+    <option value="sweets">sweets</option>
+    <option value="test">test</option>
+  </select>
+  <button type="submit">Search</button>
+</form>
+</body>
+</html>

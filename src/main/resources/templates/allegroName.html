@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Allegro</title>
+</head>
+<body>
+<div>
+    <h1>Type in name of the product</h1>
+    <form action="#" th:action="@{/allegro/resultName}" th:object="${formName}" method="post">
+        <input type="text" th:field="*{name}"placeholder="Name">
+        <button type="submit">Search</button>
+    </form>
+</div>
+</body>
+</html>
